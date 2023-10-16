@@ -1,8 +1,8 @@
-drop database if exists ecommerce;
+drop database if exists BD-API;
 
-CREATE DATABASE ecommerce;
+CREATE DATABASE BD-API;
 
-USE ecommerce;
+USE BD-API;
 
 CREATE TABLE usuario (
     usuario_id INT AUTO_INCREMENT PRIMARY KEY,
