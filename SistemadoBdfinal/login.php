@@ -1,7 +1,7 @@
 <?php
 
 if (isset($_POST['submit'])){
-
+$nome = $_POST['nome'];
 $email = $_POST['email'];
 $senha = $_POST['senha'];
 
@@ -30,6 +30,8 @@ if (mysqli_num_rows($sql) > 0){
 <body class = "body1">
     <h2>Login</h2>
     <form action="login.php" method="POST" name="cadastro1" class="cadastro1">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" class="nome">
         <label for="email">Email</label>
         <input type="email" name="email" class="email">
         <label for="senha">Senha</label>
