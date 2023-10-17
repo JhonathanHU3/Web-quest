@@ -7,16 +7,14 @@ if (isset($_POST['submit'])){
 $nome = $_POST['nome'];
 $email = $_POST['email'];
 $senha = $_POST['senha'];
-$CEP = $_POST['CEP'];
-$CPF = $_POST['CPF'];
-$CP = $_POST['CP'];
-$telefone = $_POST['telefone'];
+
+
 include_once("config.php");
 $select = mysqli_query($conexao, "SELECT * FROM usuario");
 if (mysqli_num_rows($select)>0){
     echo "Essa conta já existe!";
 } else{
-$inserir = mysqli_query($conexao, "INSERT INTO usuario (nome, email, cep, senha, cpf, categoria_primaria, numero) VALUES ( '$nome', '$email', '$CEP', '$senha', '$CPF', '$CP', '$telefone')");
+$inserir = mysqli_query($conexao, "INSERT INTO usuario (nome, email, senha) VALUES ( '$nome', '$email', '$senha')");
 }
 }
 
@@ -39,14 +37,6 @@ $inserir = mysqli_query($conexao, "INSERT INTO usuario (nome, email, cep, senha,
         <input type="text" name="nome" class= "nome">
         <label for="senha">Senha</label>
         <input type="password" name="senha" class="senha"> 
-        <label for="CEP">CEP</label>
-        <input type="text" name="CEP" class="CEP">
-        <label for="CPF">CPF</label>
-        <input type="text" name="CPF" class="CPF">
-        <label for="CP">Categoria preferida</label>
-        <input type="text" name="CP" class="CP"> 
-        <label for="telefone">Telefone</label>
-        <input type="number" name="telefone" class="telefone">  
         <br><br>
         <input type="submit" name="submit" class="submit">
         
