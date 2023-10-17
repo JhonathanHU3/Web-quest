@@ -1,3 +1,8 @@
+ul{
+    text-align: center;
+
+}
+
 a{
     background-color: blueviolet;
     background-image: linear-gradient(to rigth, blueviolet purple);
