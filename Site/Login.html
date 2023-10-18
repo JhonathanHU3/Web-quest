@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="assets/style/login.css">
+    <script src="assets/js/script.js"></script>
     <title>Document</title>
 </head>
 
@@ -16,18 +17,25 @@
     <div id="div_login">
         <form id="formlogin" method="post" action="">
 
-            <div class="mb-3">
-                <label for="email1" class="form-label">Seu email:</label>
-                <input type="email" class="form-control" id="email1" aria-describedby="emailHelp">
-              </div>
+            <div id="title" >
+                <label for="">Seja bem vindo</label>
+            </div>
 
-              <div class="mb-3">
-                <label for="senha1" class="form-label">Sua senha:</label>
-                <input type="password" class="form-control" id="senha1">
-              </div>
+            <div id="out-inputs" >
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="email1" placeholder="E-mail" aria-describedby="emailHelp">
+                </div>
 
-              <button type="submit" class="btn btn-primary">Login</button>
-              <div id="emailHelp" class="form-text">Caso não seja cadastrado <a href="#">clique aqui.<a></div>
+                <div class="mb-3">
+                    <input type="password" placeholder="Senha" class="form-control" id="senha1">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Entrar</button>
+            </div>
+
+              <div class="form-text">Ainda não possui cadastro ?
+                    <a href="#">clique aqui.<a>
+                </div>
 
         </form>
     </div>
