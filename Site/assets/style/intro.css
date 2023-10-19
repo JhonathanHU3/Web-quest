@@ -13,29 +13,3 @@ body, html {
     width: 100%;
     height: 100%;
 }
-
-#out-menu {
-    display: flex;
-    position: absolute;
-    width: 100%;
-    height: 15%;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.botao {
-    background-color: transparent;
-    border: none;
-    margin-left: 60px;
-    
- 
-}
-
-.botao:focus {
-    background-color:  rgba(34, 156, 242, 1);;
-    color: white;
-
-
-}
-

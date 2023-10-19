@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="assets/style/intro.css">
+    <link rel="stylesheet" href="assets/style/header.css">
     <script src="src/js/page_transition.js"></script>
     <title>Introdução</title>
 </head>
@@ -19,28 +20,35 @@
 
     <div id="out-menu" >
         <div id="menu" >
-            <button class="botao" onclick="changepage()"  >
+            <button class="botao" onclick="Teste()"  >
                 Introdução
             </button>
 
-            <button class="botao">
+            <button class="botao" onclick="changepage1()" >
                 Tarefas
             </button>
 
-            <button class="botao" >
+            <button class="botao" onclick="changepage2()">
                 Processamento
             </button>
 
-            <button class="botao" >
+            <button class="botao" onclick="changepage3()" >
                 Questionário
             </button>
 
-            <button class="botao"  >
+            <button class="botao" onclick="changepage4()"  >
                 Conclusão
             </button>
         </div>
     </div>
 
+<script>   
+export default function Teste() {
+    return(
+        alert('chammou')
+    )
+}
 
+</script>
 </body>
 </html>
