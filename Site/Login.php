@@ -6,7 +6,7 @@ $email = $_POST['email1'];
 $senha = $_POST['senha1'];
 
 include_once("connections/config.php");
-$verificar = "SELECT email FROM usuario WHERE email = '$email'";
+$verificar = "SELECT email FROM usuarios WHERE email = '$email'";
 
 $sql = $conexao->query($verificar);
 
