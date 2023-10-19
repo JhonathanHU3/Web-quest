@@ -14,13 +14,3 @@ body, html {
     height: 100%;
 }
 
-iframe {
-    position: relative;
-    top: 15%;
-    margin: 1%;
-    width: 98%;
-    height: 100%;
-    border: red solid 2px;
-
-
-}
