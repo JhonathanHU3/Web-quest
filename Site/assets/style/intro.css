@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style-type: none;
     text-decoration: none;
+    font-family:  'Kodchasan', sans-serif; ;
 }
 
 body, html {
@@ -13,7 +16,6 @@ body, html {
 
 #out-menu {
     display: flex;
-    border: red solid 2px;
     position: absolute;
     width: 100%;
     height: 15%;
@@ -21,9 +23,19 @@ body, html {
     align-items: center;
 }
 
+
 .botao {
     background-color: transparent;
     border: none;
     margin-left: 60px;
+    
+ 
+}
+
+.botao:focus {
+    background-color:  rgba(34, 156, 242, 1);;
+    color: white;
+
+
 }
 
