@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="assets/style/login.css">
     <script src="src/js/page_transition.js"></script>
-    <title>Document</title>
+    <title>Login</title>
 </head>
 
 <body>
@@ -15,7 +15,7 @@
     </div>
 
     <div id="div_login">
-        <form id="formlogin" method="post" action="">
+        <form id="formlogin" method="post" action="Login.php">
 
             <div id="title" >
                 <label for="">Seja bem vindo !!</label>
@@ -23,23 +23,25 @@
 
             <div id="out-inputs" >
                 <div class="mb-3">
-                    <input type="email" class="form-control" id="email1" placeholder="E-mail" aria-describedby="emailHelp" required >
+                    <input type="email" class="form-control" name="email1" id="email1" placeholder="E-mail" aria-describedby="emailHelp" required >
                 </div>
 
                 <div class="mb-3">
-                    <input type="password" placeholder="Senha" class="form-control" id="senha1" required >
+                    <input type="password" placeholder="Senha" class="form-control" name="senha1" id="senha1" required >
                 </div>
 
-                <button type="submit" class="btn btn-primary">Entrar</button>
+                <button type="submit" name = "submit" class="btn btn-primary">Entrar</button>
             </div>
 
-              <div class="form-text">Ainda não possui cadastro ?
-                    <a href="cadastro.html">clique aqui.<a>
-                </div>
+            <div class="form-text">Ainda não possui cadastro ?
+                <a href="#">clique aqui.<a>
+            </div>
 
         </form>
     </div>
 
-
+<script>
+    
+</script>
 </body>
 </html>
