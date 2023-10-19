@@ -14,3 +14,12 @@ body, html {
     height: 100%;
 }
 
+#out-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    border: red solid 2px;
+    top: 20%;
+    height: 100%;
+
+}

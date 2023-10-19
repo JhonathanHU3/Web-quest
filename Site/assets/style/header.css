@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     list-style-type: none;
-    text-decoration: none;
+   
 }
 
 body, html {
@@ -12,7 +12,7 @@ body, html {
 }
 
 #menu {
-    border: red solid 2px;
+    
     width: 55%;
     display: flex;
     flex-wrap: wrap;
@@ -26,5 +26,11 @@ body, html {
     height: 15%;
     justify-content: center;
     align-items: center;
+}
+
+.links {
+    text-decoration: none;
+    color: black;
+
 }
 
