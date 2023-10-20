@@ -1,22 +1,24 @@
 <?php
+session_start();
 
-if (isset($_POST['submit'])){
+if (isset($_POST['submit'])) {
+    $email = $_POST['email1'];
+    $senha = $_POST['senha1'];
 
-$email = $_POST['email1'];
-$senha = $_POST['senha1'];
+    include_once("connections/config.php");
 
-include_once("connections/config.php");
-$verificar = "SELECT email FROM usuarios WHERE email = '$email'";
-$verifysenha = "SELECT senha FROM usuarios WHERE senha = '$senha'";
-$sql = $conexao->query($verificar);
-$sqlsenha = $conexao->query($verifysenha);
-if ((mysqli_num_rows($sql)) > 0 and (mysqli_num_rows($sqlsenha)) > 0 ){
-    header("Location: intro.html");
-} else {
-    
-    echo("Conta ou senha incorretos! <a href='Login.html'>Voltar</a>");
-    
+    $verificar = "SELECT email, senha, nome FROM usuarios WHERE email = '$email' AND senha = '$senha'";
+    $result = $conexao->query($verificar);
+
+    if ($result && $result->num_rows > 0) {
+        $row = $result->fetch_assoc();
+        $_SESSION['nome'] = $row['nome'];
+        header("Location: intro.php");
+        exit(); 
+    } else {
+        echo "Conta ou senha incorretos! <a href='Login.html'>Voltar</a>";
+    }
 }
-}
-
 ?>
+
+
