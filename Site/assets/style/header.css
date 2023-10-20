@@ -17,9 +17,8 @@ body, html {
     justify-content: space-around;
 }
 
-.container-fluid {
+.container-sm {
     border: red solid 2px;
-    
 
 }
 
@@ -30,6 +29,7 @@ body, html {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    border-bottom: #007bff solid 2px;
 }
 
 #out-menu {
@@ -39,6 +39,7 @@ body, html {
     height: 15%;
     justify-content: center;
     align-items: center;
+    
 }
 
 .links {
