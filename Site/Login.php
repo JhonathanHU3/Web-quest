@@ -11,7 +11,7 @@ $verifysenha = "SELECT senha FROM usuarios WHERE senha = '$senha'";
 $sql = $conexao->query($verificar);
 $sqlsenha = $conexao->query($verifysenha);
 if ((mysqli_num_rows($sql)) > 0 and (mysqli_num_rows($sqlsenha)) > 0 ){
-    header("Location: home.php");
+    header("Location: intro.html");
 } else {
     
     echo("Conta ou senha incorretos! <a href='Login.html'>Voltar</a>");
