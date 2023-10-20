@@ -35,7 +35,7 @@
 
     <div id= "out-content" >
         <div class="text" id="text1" >
-            <p>O que é uma API ?</p>
+            <p id="title" >O que é uma API ?</p>
         </div>
 
         <div class="text" id="text2">
