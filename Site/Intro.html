@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introdução</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/style/header.css">
-    <link rel="stylesheet" href="assets/style/intro.css">
 </head>
 <body>
+    
+<?php
+    include ('session.php');
+    if (isset($_SESSION['name'])){
+        var_dump($_SESSION['name']);
+    }
+
+    ?>
 
     <header class="navbar bg-primary" data-bs-theme="dark">
 
@@ -17,7 +22,7 @@
         </div>
 
     </header>
-
+    <p>Bem vindo <?php echo $_SESSION['nome']; ?></p>   
     <div id="out-menu" >
         <ul id="menu" >
             <a href="Intro.html" class="links" >Introdução</a>
@@ -29,6 +34,7 @@
             <a href="atividades.html" class="links" >Questionário</a>
 
             <a href="conclusao.html" class="links" >Conclusão</a>
+
         </ul>
     </div>
 
