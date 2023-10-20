@@ -21,6 +21,23 @@ body, html {
     border: red solid 2px;
     top: 20%;
     height: 100%;
+    justify-content: flex-start;
+    align-items: center;
 
 }
 
+.text {
+    border: blue solid 2px;
+    width: 40%;
+    height: 30%;
+}
+
+#text1 {
+    width: 10%;
+    height: 10%;
+}
+
+#text2 {
+
+
+}
