@@ -1,16 +1,19 @@
-drop database if exists BD-API;
+drop database if exists BDAPI;
 
-CREATE DATABASE BD-API;
+CREATE DATABASE BDAPI;
 
-USE BD-API;
+USE BDAPI;
 
-CREATE TABLE usuario (
+CREATE TABLE usuarios (
     usuario_id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL UNIQUE,
-    cep VARCHAR(255) NOT NULL,
-    senha VARCHAR(255) NOT NULL,
-    cpf VARCHAR (13) not null unique,
-    categoria_primaria varchar(255),
-    numero float
+	senha VARCHAR(25) NOT NULL
+);
+CREATE TABLE questionarios(
+	questionario_id INT AUTO_INCREMENT PRIMARY KEY,
+	usuario_id INT,
+	total INT,
+	horario DATETIME,
+	FOREIGN KEY (usuario_id) REFERENCES usuarios(usuario_id)
 );
