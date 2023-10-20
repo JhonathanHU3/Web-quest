@@ -9,6 +9,11 @@
     font-family:  'Kodchasan', sans-serif; ;
 }
 
+p {
+    font-size: large;
+    font-style: italic;
+}
+
 body, html {
     width: 100%;
     height: 100%;
@@ -18,26 +23,47 @@ body, html {
     position: absolute;
     display: flex;
     flex-direction: column;
-    border: red solid 2px;
     top: 20%;
-    height: 100%;
+    height: 90vh;
     justify-content: flex-start;
     align-items: center;
 
 }
 
 .text {
-    border: blue solid 2px;
+    position: relative;
     width: 40%;
-    height: 30%;
+    margin-bottom: 50px;
+    height: fit-content;
 }
 
 #text1 {
-    width: 10%;
+    width: 15%;
     height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #text2 {
+    margin-top: -80px;
+    margin-left: 800px;
+    width: 35%;
+    
+}
+
+#outimg1 {
+    position: absolute;
+    left: 0;
+   
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#img {
+    width: 100%;
+    height: 100%;
 
 
 }
