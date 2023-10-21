@@ -14,6 +14,5 @@ CREATE TABLE questionarios(
 	questionario_id INT AUTO_INCREMENT PRIMARY KEY,
 	usuario_id INT,
 	total INT,
-	horario DATETIME,
 	FOREIGN KEY (usuario_id) REFERENCES usuarios(usuario_id)
 );
