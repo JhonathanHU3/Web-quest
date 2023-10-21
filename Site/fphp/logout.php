@@ -1,4 +1,5 @@
 <?php
     session_start();
     session_destroy();
-    header( 'Location: /fphp/Login.html');
+    header( 'Location: ../Login.html');
+    exit();
