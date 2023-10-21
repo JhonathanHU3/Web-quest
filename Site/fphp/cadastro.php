@@ -14,7 +14,7 @@ if (mysqli_num_rows($select)>0){
     echo "Essa conta já existe!";
 } else{
     $inserir = mysqli_query($conexao, "INSERT INTO usuarios (nome, email, senha) VALUES ( '$nome', '$email', '$senha')");
-    header("Location: ..Login.html");
+    header("Location: /Site/Login.html");
 }
 
 

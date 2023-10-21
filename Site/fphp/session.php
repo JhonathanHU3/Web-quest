@@ -3,7 +3,7 @@ session_start();
 
 
 if (!isset($_SESSION['nome'])) {
-    header('Location: Login.html');
+    header('Location: /fphp/Login.html');
     exit;
 }
 ?>
