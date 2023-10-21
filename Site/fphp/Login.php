@@ -13,12 +13,11 @@ if (isset($_POST['submit'])) {
     if ($result && $result->num_rows > 0) {
         $row = $result->fetch_assoc();
         $_SESSION['nome'] = $row['nome'];
-        header("Location: intro.php");
+        header("Location: ..intro.php");
         exit(); 
     } else {
         echo "Conta ou senha incorretos! <a href='Login.html'>Voltar</a>";
     }
 }
 ?>
-
 

@@ -1,7 +1,4 @@
 
-
-@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@500&display=swap');
-
 body {
     display: flex;
     padding: 0;
@@ -25,8 +22,6 @@ body {
     width: 60%;
     height: 90%;
     top: 10%;
-  
-
 }
 
 #div_login {
@@ -35,6 +30,7 @@ body {
     left: 50%;
     height: 100%;
     display: flex;
+    right: 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -55,7 +51,6 @@ body {
     font-size:xx-large;
     font: bold;
     font-weight: bolder;
-    font-family:  'Kodchasan', sans-serif;
     color: white;
 
 }
@@ -75,18 +70,12 @@ input {
     width: 100%;
 }
 
-.btn btn-primary {
-    
-
-}
-
 #form-text {
     color: white;
 
 }
 
 a {
-
     color: white;
 }
 

@@ -8,7 +8,7 @@
 <body>
     
 <?php
-    include ('session.php');
+    include ('fphp/session.php');
     if (isset($_SESSION['name'])){
         var_dump($_SESSION['name']);
     }
