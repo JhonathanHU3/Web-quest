@@ -1,31 +1,132 @@
+@media (min-width:200px) and (max-width:549px){
+    
+    
+    main {
+        width: 100%;
+        height: 110vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    
+    #text {
+        width: 100%;
+        height: 50% ;
+        margin-top: 50px;
+    }
+    
+    p {
+        line-height: 2.5rem;
+        font-size: 0.8em;
+    }
+    
+    #out_girl {
+        width: 80%;
+        height: 25%;
+    }
+    
+    #in_girl {
+        display: none;
+    
+    }
+    
+    #video {
+    margin-top: 90px;
+    width: 100%;
+    height: 30vh;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    box-shadow: 2px 2px 2px 2px;
+    border-radius: 5px;
+}
+
+h2 {
+    border-bottom:  #007bff solid 5px;
+}
+    
+}
+
+
+@media(min-width:550px) and (max-width:949px){
+    
+    #out_girl {
+        width: 80%;
+        height: 25%;
+    }
+    
+    #in_girl {
+        display: none;
+    
+    }
+
+    h2 {
+        border-bottom:  #007bff solid 5px;
+    }
+    
+    #video {
+        width: 80%;
+        height: 30vh;
+        position:absolute;
+        left: 10%;
+       
+    
+    }
+    
+    iframe {
+        width: 100%;
+        height: 100%;
+        box-shadow: 2px 2px 2px 2px;
+        border-radius: 5px;
+    }
+
+    
+
+}
+
+
+@media (min-width:950px) {
+
+
 main {
     width: 100%;
-    border: red solid 2px;
-    height: 100%;
+    height: 120vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 
+h2 {
+    border-bottom:  #007bff solid 5px;
+}
+
 #text {
-    width: 20vw;
-    height: 20vh fit-content;
-    border: red solid 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 27vw;
+    height: 90% fit-content;
     margin-left: 100px;
-    
-    margin-top: -100px;
+    padding: 10px;
+    overflow: auto;
+    max-height: 90%;
 }
 
 p {
-    line-height: 2.5rem;
+    line-height: 3rem;
+    font-size: large;
+    text-align: justify;
 }
 
 #out_girl {
-    position: relative;
+    margin-top: 150px;
     width: 60vw;
-    height: 90vh;
-    top: 10%;
+    height: 100vh;
 }
 
 #in_girl {
@@ -33,3 +134,23 @@ p {
     height: 100%;
 
 }
+
+#video {
+    z-index: 1;
+    width: 25vw;
+    height: 30vh;
+    position:absolute;
+    top: 50%;
+    left: 45%;
+
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    box-shadow: 2px 2px 2px 2px;
+    border-radius: 5px;
+}
+
+}
+
