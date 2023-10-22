@@ -1,25 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style/header.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="assets/style/intro.css">
     <title>Introdução</title>
 </head>
+
 <body>
 
     <?php 
         include ('fphp/logout.php');
         logout();
     ?>
-<?php
-    include ('fphp/session.php');
-    if (isset($_SESSION['name'])){
-        var_dump($_SESSION['name']);
-    }
-
+    
+    <?php
+    include('fphp/session.php');
     ?>
 
 <header class="navbar bg-primary" data-bs-theme="dark">
@@ -79,4 +78,5 @@
     </main>
 
 </body>
+
 </html>
