@@ -1,0 +1,35 @@
+main {
+    width: 100%;
+    border: red solid 2px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#text {
+    width: 20vw;
+    height: 20vh fit-content;
+    border: red solid 2px;
+    margin-left: 100px;
+    
+    margin-top: -100px;
+}
+
+p {
+    line-height: 2.5rem;
+}
+
+#out_girl {
+    position: relative;
+    width: 60vw;
+    height: 90vh;
+    top: 10%;
+}
+
+#in_girl {
+    width: 100%;
+    height: 100%;
+
+}

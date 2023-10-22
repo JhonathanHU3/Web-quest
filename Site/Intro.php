@@ -9,7 +9,11 @@
     <title>Introdução</title>
 </head>
 <body>
-    
+
+    <?php 
+        include ('fphp/logout.php');
+        logout();
+    ?>
 <?php
     include ('fphp/session.php');
     if (isset($_SESSION['name'])){
@@ -18,43 +22,61 @@
 
     ?>
 
-    <header class="navbar bg-primary" data-bs-theme="dark">
+<header class="navbar bg-primary" data-bs-theme="dark">
 
-        <div class="container-fluid">
+    <nav id="navbar" >
+        <div id="nomeSite">
             <a class="navbar-brand">API Web Quest</a>
         </div>
+       
+        <div class="dropdown">
 
-    </header>
-    <p>Bem vindo <?php echo $_SESSION['nome']; ?></p>   
+            <div class="dropbtn" >
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                  </svg>
+            </div> 
+
+            <div class="dropdown-content">
+              <a href="" onclick="logout()" >Sair</a>
+            </div>
+
+        </div>
+    </nav>
+
+</header>
+
+    <p id="mensagem" >Bem vindo <?php echo $_SESSION['nome']; ?></p>   
     <div id="out-menu" >
         <ul id="menu" >
-            <a href="Intro.html" class="links" >Introdução</a>
+            <li><a href="intro.html" class="links" >Introdução</a></li>
 
-            <a href="tarefa.html" class="links" >Tarefa  </a>
+            <li><a href="tarefa.html" class="links" >Tarefa </a></li>
 
-            <a href="Processos.html" class="links" >Processos</a>
+            <li><a href="processos.html" class="links" >Processos</a></li>
 
-            <a href="atividades.html" class="links" >Questionário</a>
+            <li><a href="atividades.html" class="links" >Questionário</a></li>
 
-            <a href="conclusao.html" class="links" >Conclusão</a>
+            <li><a href="conclusao.html" class="links" >Conclusão</a></li>
 
         </ul>
     </div>
 
-    <div id= "out-content" >
+    <main id= "out-content" >
         <div id="text" >
-            <p>O que é uma API ?</p>
+            <p id="title" >O que é uma API ?</p>
         </div>
 
         <div id="text2" >
-            <p>As tarefas a seguir foram meticulosamente elaboradas para proporcionar uma experiência de aprendizado abrangente e prática
+            <p id="inText2" >As tarefas a seguir foram meticulosamente elaboradas para proporcionar uma experiência de aprendizado abrangente e prática
             Nesta primeira  fase, mergulhe primeiro nos fundamentos das APIs. Lembre-se de ir atrás de todas as informações possiveis para que entenda não apenas o que são, mas por que são essenciais no cenário tecnológico atual. Explore os tipos de APIs, desde as clássicas APIs RESTful até as flexíveis APIs GraphQL. Aprofunde-se nos componentes cruciais, como pontos de extremidade (endpoints) – os pontos de contato entre seu aplicativo e a API – e compreenda a estrutura de solicitações e respostas. </p>
         </div>
 
-        <div id="img1" >
-            <img src="" alt="">
+        <div id="outimg1">
+            <img id="img" src="assets/imgs/52410651-fa95b900-2b13-11e9-970e-eff9afd83b23.png" alt="">         
         </div>
-    </div>
+    </main>
 
 </body>
 </html>
