@@ -32,7 +32,9 @@
             <a class="navbar-brand">API Web Quest</a>
         </div>
 
-        <p id="mensagem" >Bem vindo <?php echo firstName($name); ?></p>  
+        <div id="out-mensag" >
+            <p id="mensagem" >Bem vindo <?php echo firstName($name); ?></p>
+        </div>  
        
         <div class="dropdown">
 

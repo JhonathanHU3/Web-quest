@@ -11,9 +11,10 @@
 
 @media (min-width:200px) and (max-width:950px){
   #navbar {
-      flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
+      justify-content: center;
       display: flex;
+      flex-direction: column;
       width: 100%;
     }
   }
@@ -34,7 +35,15 @@
   
   }
 
- 
+  #menu { 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 
   svg {
     width: 100%;
@@ -141,6 +150,23 @@ body, html {
   flex-direction: row;
 }
 
+#out-mensag {
+
+    width:20vw ;
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    margin-left: 380px;
+   
+}
+
+#mensagem {
+  display: block;
+  margin-top: 20px;
+}
+
 #nomeSite {
   width: 30vw;
   margin-left: 30px;
@@ -173,10 +199,7 @@ svg {
   height:100% ;
 }
 
-#mensagem {
-  display: block;
 
-}
 
 .links {
     text-decoration: none;
