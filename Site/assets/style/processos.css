@@ -1,12 +1,12 @@
-@media (min-width:200px) and (max-width:549px){
+@media (min-width:200px) and (max-width:400px){
     
     
     main {
         width: 100%;
-        height: 110vh;
+        height: 115vh;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
     }
     
@@ -22,10 +22,7 @@
         font-size: 0.8em;
     }
     
-    #out_girl {
-        width: 80%;
-        height: 25%;
-    }
+   
     
     #in_girl {
         display: none;
@@ -33,9 +30,9 @@
     }
     
     #video {
-    margin-top: 90px;
     width: 100%;
     height: 30vh;
+    margin-top: 210px;
 }
 
 iframe {
@@ -48,12 +45,21 @@ iframe {
 h2 {
     border-bottom:  #007bff solid 5px;
 }
+p{
+    text-align: justify;
+}
     
 }
 
 
-@media(min-width:550px) and (max-width:949px){
+@media(min-width:400px) and (max-width:950px){
     
+    main {
+        width: 100%;
+        height: 120vh;
+       
+    }
+
     #out_girl {
         width: 80%;
         height: 25%;
@@ -67,13 +73,24 @@ h2 {
     h2 {
         border-bottom:  #007bff solid 5px;
     }
+
+    p{
+        text-align: justify;
+    }
+
+    #text {
+        margin-top: 50px;
+        width: 90%;
+        position: relative;
+        left: 5%;
+    }
     
     #video {
         width: 80%;
-        height: 30vh;
+        height: 60vh;
         position:absolute;
         left: 10%;
-       
+        margin-top: 50px;
     
     }
     
@@ -105,20 +122,24 @@ h2 {
     border-bottom:  #007bff solid 5px;
 }
 
+p{
+    text-align: justify;
+}
+
 #text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 27vw;
+    width: 39vw;
     height: 90% fit-content;
-    margin-left: 100px;
+    margin-left: 40px;
     padding: 10px;
     overflow: auto;
     max-height: 90%;
 }
 
 p {
-    line-height: 3rem;
+    line-height: 2.2rem;
     font-size: large;
     text-align: justify;
 }

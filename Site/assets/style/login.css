@@ -1,5 +1,5 @@
 /*Telas super pequenas*/
-@media (min-width:200px) and (max-width:549px){
+@media (min-width:200px) and (max-width:550px){
     body{
         background-color: rgba(34, 156, 242, 1);
     }
@@ -79,7 +79,7 @@
 }
 
 /*Celulares mais comuns com resoluções parecidas*/
-@media(min-width:550px) and (max-width:799px){
+@media(min-width:550px) and (max-width:800px){
     body {
         display: flex;
         padding: 0;
