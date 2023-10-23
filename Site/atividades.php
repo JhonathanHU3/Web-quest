@@ -48,7 +48,7 @@
 
         <div class="dropdown-content">
           
-          <a href="#">Sair</a>
+          <a href="fphp/logout.php">Sair</a>
 
         </div>
 
