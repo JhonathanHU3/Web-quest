@@ -1,5 +1,8 @@
+<?php
+  include('fphp/session.php');
+  ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
@@ -16,10 +19,6 @@
 </head>
 
 <body>
-
-  <?php
-  include('fphp/session.php');
-  ?>
 
   <?php
   function firstName($name)
@@ -48,7 +47,9 @@
         </div>
 
         <div class="dropdown-content">
-          <a href="">Sair</a>
+          
+          <a href="#">Sair</a>
+
         </div>
 
       </div>

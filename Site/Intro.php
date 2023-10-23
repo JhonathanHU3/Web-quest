@@ -1,3 +1,6 @@
+<?php
+    include('fphp/session.php');
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -11,12 +14,6 @@
 </head>
 
 <body>
-
-    
-    <?php
-    include('fphp/session.php');
-    ?>
-
     <?php
     function firstName($name){
     $array = explode(" ",$name);
@@ -24,7 +21,6 @@
     }
     $name = $_SESSION['nome'];
     ?>
-
 <header class="navbar bg-primary" data-bs-theme="dark">
 
     <nav id="navbar" >

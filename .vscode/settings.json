@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/5a7df31f-17aa-4c3d-aa3f-c1778089e2f1/resourceGroups/api-webquest-teste01_group/providers/Microsoft.Web/sites/api-webquest-teste01",
+    "appService.deploySubpath": "Site"
+}
