@@ -86,7 +86,7 @@ $pdo = null; // Feche a conexão
 
     <div id="out-menu">
         <ul id="menu">
-            <li><a href="Intro.php" class="links">Introdução</a></li>
+            <li><a href="intro.php" class="links">Introdução</a></li>
 
             <li><a href="tarefa.php" class="links">Tarefa </a></li>
 
