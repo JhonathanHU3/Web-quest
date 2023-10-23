@@ -41,10 +41,10 @@ if (isset($_POST['submit'])) {
             exit();
         } else {
             echo "Conta ou senha incorretos! <a href='../Login.html'>Voltar</a>";
-        }
-    } else {
+        } else {
         // Lidar com erro na execução da consulta
         die("Erro na consulta: " . print_r($stmt->errorInfo(), true));
     }
 }
 ?>
+

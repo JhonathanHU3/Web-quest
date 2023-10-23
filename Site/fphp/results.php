@@ -7,6 +7,7 @@ try {
 
 } catch (PDOException $e) {
     die("Conexão falhou: " . $e->getMessage());
+
 }
 
 // Recebe os dados do questionário via POST
@@ -16,6 +17,7 @@ $data = json_decode(file_get_contents('php://input'), true);
 $totalCorrect = $data['totalCorrect'];
 $totalQuestions = $data['totalQuestions'];
 $tempo = $data['tempo'];
+
 
 // Recupera o ID do usuário da sessão (assumindo que você está usando sessões)
 session_start();
@@ -39,4 +41,5 @@ try {
 
 // Fecha a conexão com o banco de dados
 $conexao = null; // ou $stmt = null; se preferir
+
 ?>
