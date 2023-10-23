@@ -155,6 +155,7 @@ body, html {
 
 #out-menu {
     display: flex;
+    position: absolute;
     width: 100%;
     height: 10%;
     justify-content: center;
