@@ -27,6 +27,8 @@
         <div id="nomeSite">
             <a class="navbar-brand">API Web Quest</a>
         </div>
+
+        <p id="mensagem" >Bem vindo <?php echo $_SESSION['nome']; ?></p>  
        
         <div class="dropdown">
 
@@ -46,10 +48,10 @@
 
 </header>
 
-    <p id="mensagem" >Bem vindo <?php echo $_SESSION['nome']; ?></p>   
+     
     <div id="out-menu" >
         <ul id="menu" >
-            <li><a href="intro.php" class="links" >Introdução</a></li>
+            <li><a href="intro.html" class="links" >Introdução</a></li>
 
             <li><a href="tarefa.html" class="links" >Tarefa </a></li>
 
@@ -69,7 +71,8 @@
             
             <h2>O que é uma API ?</h2>
             <p id="inText2" >
-                As tarefas a seguir foram meticulosamente elaboradas para proporcionar uma experiência de aprendizado abrangente e prática
+                <h4>API significa Application Programming Interface (Interface de Programação de Aplicação).</h4>  No contexto de APIs, a palavra Aplicação refere-se a qualquer software com uma função distinta. A interface pode ser pensada como um contrato de serviço entre duas aplicações.
+                Para isso, tarefas foram meticulosamente elaboradas para proporcionar uma experiência de aprendizado abrangente e prática sobre as APIs.
                 Nesta primeira  fase, mergulhe primeiro nos fundamentos das APIs. Lembre-se de ir atrás de todas as informações possiveis para que entenda não apenas o que são, mas por que são essenciais no cenário tecnológico atual. Explore os tipos de APIs, desde as clássicas APIs RESTful até as flexíveis APIs GraphQL. Aprofunde-se nos componentes cruciais, como pontos de extremidade (endpoints) – os pontos de contato entre seu aplicativo e a API – e compreenda a estrutura de solicitações e respostas. 
             </p>
         </div>

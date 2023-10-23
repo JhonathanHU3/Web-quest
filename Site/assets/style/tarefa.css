@@ -1,0 +1,71 @@
+
+
+@media(min-width:200px) and (max-width:950px){
+
+    #girl_chill{
+        display: none;
+    }
+
+    #task-text{
+        margin-top: 60px;
+        position: relative;
+        width: 90%;
+        left: 5%;
+
+    }
+
+    h4{
+        border-bottom:  #007bff solid 5px;
+    }
+
+}
+
+@media(min-width:950px){
+
+    main{
+        width: 100%;
+        height: 120vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+
+    #task-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50vw;
+        height: 80% fit-content;
+        margin-left: 60px;
+        padding: 10px;
+        overflow: auto;
+        max-height: 80%;
+
+    }
+
+    p {
+        line-height: 3rem;
+        font-size: large;
+        text-align: justify;
+
+    }
+
+    h4{
+        border-bottom:  #007bff solid 5px;
+    }
+
+    #girl_chill{
+        height:45vw ;
+        width:90vh ;
+        position: sticky;
+        top: 30%;
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+
+    }
+
+}
