@@ -18,8 +18,9 @@
     }
     
     p {
-        line-height: 2.5rem;
-        font-size: 0.8em;
+        text-align: justify;
+        font-size: 19px;
+        margin: 4px;
     }
     
    
@@ -76,6 +77,8 @@ p{
 
     p{
         text-align: justify;
+        margin: 4px;
+        font-size: 19px;
     }
 
     #text {

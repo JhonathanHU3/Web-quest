@@ -54,7 +54,7 @@
 
     <div id="out-menu">
         <ul id="menu">
-            <li><a href="Intro.php" class="links">Introdução</a></li>
+            <li><a href="intro.php" class="links">Introdução</a></li>
 
             <li><a href="tarefa.php" class="links">Tarefa </a></li>
 
@@ -62,7 +62,7 @@
 
             <li><a href="atividades.php" class="links">Questionário</a></li>
 
-            <li><a href="atividades.php" class="links">Conclusão</a></li>
+            <li><a href="conclusao.php" class="links">Conclusão</a></li>
         </ul>
     </div>
 

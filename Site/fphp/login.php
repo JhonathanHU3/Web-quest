@@ -38,7 +38,7 @@ if (isset($_POST['submit'])) {
             header("Location: ../intro.php");
             exit();
         } else {
-            echo "Conta ou senha incorretos! <a href='../Login.html'>Voltar</a>";
+            echo "Conta ou senha incorretos! <a href='../login.html'>Voltar</a>";
     }
 }
 }
