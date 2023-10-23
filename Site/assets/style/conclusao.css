@@ -30,6 +30,10 @@
         text-align: justify;
     }
 
+    .fbutton {
+        text-align: center;
+    }
+
 
 }
 
@@ -62,10 +66,10 @@
     }
 
     #textout{
-        width: 15vw;
+        width: 18vw;
         height: 50vh fit-content;
         position: absolute;
-        left: 52%;
+        left: 50%;
         max-height: 50vh;
         overflow: auto;
     }
@@ -76,4 +80,9 @@
     }
 
 
+    .fbutton {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0px 5px 0px;
+    }
 }
