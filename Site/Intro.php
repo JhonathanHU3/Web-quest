@@ -34,7 +34,7 @@
 
         <div id="out-mensag" >
             <p id="mensagem" >Bem vindo <?php echo firstName($name); ?></p>
-        </div>  
+        </div>   
        
         <div class="dropdown">
 
@@ -54,17 +54,17 @@
 
 </header>
 
-    <div id="out-menu" >
+<div id="out-menu" >
         <ul id="menu" >
-            <li><a href="intro.php" class="links" >Introdução</a></li>
+            <li><a href="Intro.php" class="links" >Introdução</a></li>
 
-            <li><a href="tarefa.html" class="links" >Tarefa </a></li>
+            <li><a href="tarefa.php" class="links" >Tarefa </a></li>
 
-            <li><a href="processos.html" class="links" >Processos</a></li>
+            <li><a href="processos.php" class="links" >Processos</a></li>
 
             <li><a href="atividades.php" class="links" >Questionário</a></li>
 
-            <li><a href="conclusao.html" class="links" >Conclusão</a></li>
+            <li><a href="conclusao.php" class="links" >Conclusão</a></li>
 
         </ul>
     </div>
