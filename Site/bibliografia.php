@@ -1,3 +1,6 @@
+<?php
+    include('fphp/session.php');
+    ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -11,11 +14,6 @@
 </head>
 
 <body>
-
-    <?php
-    include('fphp/session.php');
-    ?>
-
     <?php
     function firstName($name)
     {

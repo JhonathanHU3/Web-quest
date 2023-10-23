@@ -1,8 +1,6 @@
 <?php
 session_start();
 
-session_start();
-
 if (isset($_POST['submit'])) {
     $email = $_POST['email1'];
     $senha = $_POST['senha1'];
@@ -37,14 +35,12 @@ if (isset($_POST['submit'])) {
             $_SESSION['usuario_id'] = $row['usuario_id'];
             $_SESSION['nome'] = $row['nome'];
             $_SESSION['email'] = $row['email'];
-            header("Location: ../Intro.php");
+            header("Location: ../intro.php");
             exit();
         } else {
             echo "Conta ou senha incorretos! <a href='../Login.html'>Voltar</a>";
-        } else {
-        // Lidar com erro na execução da consulta
-        die("Erro na consulta: " . print_r($stmt->errorInfo(), true));
     }
+}
 }
 ?>
 

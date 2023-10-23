@@ -25,7 +25,7 @@ if (isset($_POST['submit'])) {
             $stmt->bindParam(':senha', $senha);
             $stmt->execute();
 
-            header("Location: ../Login.html");
+            header("Location: ../login.html");
         }
     } catch (PDOException $e) {
         echo "Erro: " . $e->getMessage();

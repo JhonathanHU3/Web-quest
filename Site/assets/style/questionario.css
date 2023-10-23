@@ -32,6 +32,7 @@ button {
     box-shadow: 5px 5px 15px black;
     text-align: center;
     margin-top: 10%;
+    margin-bottom: 20%;
 }
 
 .question {
@@ -73,7 +74,6 @@ button {
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    text-align: justify;
 }
 
 .button:not(:disabled):hover {
