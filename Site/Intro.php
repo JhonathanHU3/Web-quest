@@ -12,13 +12,17 @@
 
 <body>
 
-    <?php 
-        include ('fphp/logout.php');
-        logout();
-    ?>
     
     <?php
     include('fphp/session.php');
+    ?>
+
+    <?php
+    function firstName($name){
+    $array = explode(" ",$name);
+    return $array[0];
+    }
+    $name = $_SESSION['nome'];
     ?>
 
 <header class="navbar bg-primary" data-bs-theme="dark">
@@ -40,7 +44,7 @@
             </div> 
 
             <div class="dropdown-content">
-              <a href="" onclick="logout()" >Sair</a>
+              <a href="fphp/logout.php" >Sair</a>
             </div>
 
         </div>
@@ -48,7 +52,6 @@
 
 </header>
 
-     
     <div id="out-menu" >
         <ul id="menu" >
             <li><a href="intro.html" class="links" >Introdução</a></li>

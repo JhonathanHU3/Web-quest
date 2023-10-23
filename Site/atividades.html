@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="assets/style/header.css">
+    <link rel="stylesheet" href="assets/style/questionario.css">
     
     <title>Introdução</title>
 
@@ -53,5 +54,34 @@
         </ul>
     </div>
 
+    <div class="questionario">
+        <div id="container">
+            <div class="quest-container hide">
+                <span class="question">Pergunta aqui!</span>
+                <div class="result"></div>
+                <div class="answers-container">
+                    <button class="answer button">Resposta 1</button>
+                    <button class="answer button">Resposta 2</button>
+                    <button class="answer button">Resposta 3</button>
+                    <button class="answer button">Resposta 4</button>
+                </div>
+            </div>
+            <div class="inicial">
+                <h1>Bem vindo ao questionário avaliativo sobre APIs!</h1> <br> 
+                <p class="texto2">Neste questionario será testato suas habilidades e conhecimentos desenvolvidos até aqui. <br>
+                Quando estiver preparado para começar clique no botão abaixo.</p>
+            </div>
+            <div class="controls-container">
+                <button class="start-quiz button">Iniciar questionário!</button>
+                <button class="next-question button hide">Próxima pergunta!</button>
+            </div>
+            <div class="final hide">
+                <span class="question q2">Todas as perguntas respondidas!</span>
+                <span class="question q3"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
