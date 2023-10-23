@@ -6,6 +6,7 @@ const resultDiv = document.querySelector(".result");
 const nextQuestionButton = document.querySelector(".next-question");
 const finalDiv = document.querySelector(".final");
 const resultado = document.querySelector(".q3");
+const textoInicial = document.querySelector(".inicial");
 
 startQuizzButton.addEventListener("click", startGame);
 nextQuestionButton.addEventListener("click", displayNextQuestion);
@@ -21,6 +22,7 @@ function startGame() {
     questionsContainer.classList.remove("hide");
     displayNextQuestion();
     dateAntes = Date.now();
+    textoInicial.classList.add("hide");
 }
 
 function displayNextQuestion() {

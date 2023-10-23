@@ -27,10 +27,11 @@ button {
     max-width: 900px;
     height: 100%;
     color: white;
-    padding: 25px;
+    padding: 30px;
     border-radius: 30px 5px;
     box-shadow: 5px 5px 15px black;
     text-align: center;
+    margin-top: 10%;
 }
 
 .question {
@@ -94,4 +95,8 @@ button {
     font-size: 22px;
     margin-bottom: 12px;
     font-weight: 700;
+}
+
+.texto2 {
+    font-size: 19px;
 }
