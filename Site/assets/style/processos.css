@@ -21,6 +21,7 @@
         text-align: justify;
         font-size: 19px;
         margin: 4px;
+        padding: 10px;
     }
     
    
@@ -79,6 +80,7 @@ p{
         text-align: justify;
         margin: 4px;
         font-size: 19px;
+        padding: 10px;
     }
 
     #text {
