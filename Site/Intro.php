@@ -32,7 +32,7 @@
             <a class="navbar-brand">API Web Quest</a>
         </div>
 
-        <p id="mensagem" >Bem vindo <?php echo $_SESSION['nome']; ?></p>  
+        <p id="mensagem" >Bem vindo <?php echo firstName($name); ?></p>  
        
         <div class="dropdown">
 
@@ -54,7 +54,7 @@
 
     <div id="out-menu" >
         <ul id="menu" >
-            <li><a href="intro.html" class="links" >Introdução</a></li>
+            <li><a href="intro.php" class="links" >Introdução</a></li>
 
             <li><a href="tarefa.html" class="links" >Tarefa </a></li>
 
